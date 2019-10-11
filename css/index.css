@@ -184,6 +184,9 @@ p {
   text-decoration: none;
   padding: 10px;
 }
+.navbar .headerimg {
+  max-width: 500px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -205,11 +208,31 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 95%;
+  }
 }
 .home .visit-planets {
   padding: 15px;

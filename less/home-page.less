@@ -18,12 +18,33 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    
+    @media @mobile{
+      flex-direction: column;
+    }//this closes the query
 
+    .sky{
+      @media @mobile{
+      display: none;
+    }//this closes the query
+  }//.sky
+    .launch{
+      @media @mobile{
+        display: none;
+      }//this closes the query
+    }//.launch
+  
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @mobile{
+        width: 95%;
+
+       
+      }
     }
   }
 
