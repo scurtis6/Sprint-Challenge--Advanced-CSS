@@ -1,1 +1,18 @@
 // Mixins Here
+
+.navstyle() {
+    text-align: center;
+    padding: 10px 0;
+}
+.topnavstyle(){
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.btnstyle(@btnpad; @btncolor; @btnbg; @btnrad; @btntext){
+    padding: @btnpad;
+    color: @btncolor;
+    background: @btnbg;
+    border-radius: @btnrad;
+    text-align: @btntext;
+}
