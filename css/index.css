@@ -185,7 +185,13 @@ p {
   padding: 10px;
 }
 .navbar .headerimg {
-  max-width: 500px;
+  max-width: 80rem;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .navbar .headerimg {
+    max-width: 500px;
+  }
 }
 footer {
   color: #22283B;
