@@ -1,1 +1,15 @@
 // Mixins Here
+.width-100{
+    width: 100%;
+}
+.small-font{
+    font-size: 2rem;
+}
+.btn-style(@color, @text, @radius, @pad, @width, @align){
+    background-color: @color;
+    color: @text;
+    border-radius: @radius;
+    padding: @pad;
+    width: @width;
+    text-align: @align;
+}

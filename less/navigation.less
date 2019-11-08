@@ -1,1 +1,30 @@
 // Navigation code here
+.navigation{
+    margin: 0 auto;
+    width: 900px;
+    background-color: @wild-sand;
+    text-align: center;
+    border-bottom: 2px solid @sea-shell;
+    padding-bottom: 2%;
+    @media @phone{
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    .logo{
+        padding: 2% 0;
+        h1{
+            font-size: 4rem;
+        }//this closes the h1
+    }//this closes the .logo
+    nav{
+        @media @phone{
+            margin-top: 2%;
+        }
+        a{
+            .small-font();
+            color: @river-bend;
+            text-decoration: none;
+            padding: 0 2%;
+        }
+    }
+}//this closes the .navigation

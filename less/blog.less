@@ -1,0 +1,69 @@
+body{
+    max-width: 800px;
+    margin: 0 auto;
+}
+// Navigation code here
+.blog-navigation{
+    margin: 0 auto;
+    width: 800px;
+    background-color: @wild-sand;
+    text-align: center;
+    border-bottom: 2px solid @sea-shell;
+    padding-bottom: 2%;
+    position: fixed;
+    opacity: 0.6;
+    
+    @media @phone{
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    .blog-logo{
+        padding: 2% 0;
+        h1{
+            font-size: 4rem;
+        }//this closes the h1
+    }//this closes the .logo
+    nav{
+        @media @phone{
+            margin-top: 2%;
+        }
+        a{
+            .small-font();
+            color: @river-bend;
+            text-decoration: none;
+            padding: 0 2%;
+        }
+    }
+}//this closes the .navigation
+
+.blog-img{
+    margin-top: 14%;
+    animation-name: slideInLeft;
+    animation-duration: 5s;
+}//this closes the .blog-img
+section{
+    padding: 2%;
+    background-color: @wild-sand;
+    animation-name: rotateIn;
+    animation-duration: 4s;
+    h1{
+        font-size: 3rem;
+        padding-bottom: 1%;
+    }//closes the h1
+    p{
+        padding-top: 1%;
+    }//closes the p tag
+}//closes the sections
+
+.blog-bottom{
+    .button{
+        margin: 4% 0;
+        width: 25%;
+        a{
+        .btn-style(#22283A, white, 6px, 5% 25%, 25%, center);
+        .small-font();
+        margin: 2% 0;
+        text-decoration: none;
+        }
+    }
+}
