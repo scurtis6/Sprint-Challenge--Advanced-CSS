@@ -160,6 +160,11 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  margin: 0 auto;
+  width: 800px;
+  background-color: lightgray;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
