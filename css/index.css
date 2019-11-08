@@ -1,3 +1,38 @@
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+@keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.rotateIn {
+  -webkit-animation-name: rotateIn;
+  animation-name: rotateIn;
+}
 .width-100 {
   width: 100%;
 }
@@ -170,14 +205,14 @@ p {
   margin: 0 auto;
   width: 900px;
   background-color: #F6F6F6;
-  height: 9vh;
   text-align: center;
   border-bottom: 2px solid #F1F1F1;
+  padding-bottom: 2%;
 }
 @media (max-width: 500px) {
   .navigation {
     width: 100%;
-    padding-bottom: 20%;
+    padding-bottom: 3%;
   }
 }
 .navigation .logo {
@@ -283,7 +318,7 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  background-color: black;
+  background-color: #22283A;
   color: white;
   border-radius: 6px;
   padding: 2% 0;
@@ -315,4 +350,138 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.blog-navigation {
+  margin: 0 auto;
+  width: 800px;
+  background-color: #F6F6F6;
+  text-align: center;
+  border-bottom: 2px solid #F1F1F1;
+  padding-bottom: 2%;
+  position: fixed;
+  opacity: 0.6;
+}
+@media (max-width: 500px) {
+  .blog-navigation {
+    width: 100%;
+    padding-bottom: 3%;
+  }
+}
+.blog-navigation .blog-logo {
+  padding: 2% 0;
+}
+.blog-navigation .blog-logo h1 {
+  font-size: 4rem;
+}
+@media (max-width: 500px) {
+  .blog-navigation nav {
+    margin-top: 2%;
+  }
+}
+.blog-navigation nav a {
+  font-size: 2rem;
+  color: #454A59;
+  text-decoration: none;
+  padding: 0 2%;
+}
+.blog-img {
+  margin-top: 14%;
+  animation-name: slideInLeft;
+  animation-duration: 5s;
+}
+section {
+  padding: 2%;
+  background-color: #F6F6F6;
+  animation-name: rotateIn;
+  animation-duration: 4s;
+}
+section h1 {
+  font-size: 3rem;
+  padding-bottom: 1%;
+}
+section p {
+  padding-top: 1%;
+}
+.blog-bottom .button {
+  margin: 4% 0;
+  width: 25%;
+}
+.blog-bottom .button a {
+  background-color: #22283A;
+  color: white;
+  border-radius: 6px;
+  padding: 5% 25%;
+  width: 25%;
+  text-align: center;
+  font-size: 2rem;
+  margin: 2% 0;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus,
+input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+button:hover {
+  opacity: 1;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
 }
