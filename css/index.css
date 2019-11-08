@@ -1,3 +1,9 @@
+.width-100 {
+  width: 100%;
+}
+.small-font {
+  font-size: 2rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -163,10 +169,10 @@ p {
 .navigation {
   margin: 0 auto;
   width: 900px;
-  background-color: #e7e7e7;
+  background-color: #F6F6F6;
   height: 9vh;
   text-align: center;
-  border-bottom: 2px solid lightgray;
+  border-bottom: 2px solid #F1F1F1;
 }
 .navigation .logo {
   padding: 2% 0;
@@ -176,7 +182,7 @@ p {
 }
 .navigation nav a {
   font-size: 2rem;
-  color: black;
+  color: #454A59;
   text-decoration: none;
   padding: 0 2%;
 }
@@ -189,6 +195,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro .header-img {
+  border-radius: 2%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -231,6 +240,19 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: black;
+  color: white;
+  border-radius: 8%;
+  padding: 2% 0;
+  width: 30%;
+  text-align: center;
+  font-size: 2rem;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: black;
 }
 .home .walk .walk-img {
   width: 46%;

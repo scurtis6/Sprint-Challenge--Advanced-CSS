@@ -2,10 +2,10 @@
 .navigation{
     margin: 0 auto;
     width: 900px;
-    background-color: rgb(231, 231, 231);
+    background-color: @wild-sand;
     height: 9vh;
     text-align: center;
-    border-bottom: 2px solid lightgray;
+    border-bottom: 2px solid @sea-shell;
     .logo{
         padding: 2% 0;
         h1{
@@ -14,8 +14,8 @@
     }//this closes the .logo
     nav{
         a{
-            font-size: 2rem;
-            color: black;
+            .small-font();
+            color: @river-bend;
             text-decoration: none;
             padding: 0 2%;
         }
