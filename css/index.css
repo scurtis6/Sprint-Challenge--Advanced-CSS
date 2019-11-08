@@ -162,8 +162,23 @@ p {
 }
 .navigation {
   margin: 0 auto;
-  width: 800px;
-  background-color: lightgray;
+  width: 900px;
+  background-color: #e7e7e7;
+  height: 9vh;
+  text-align: center;
+  border-bottom: 2px solid lightgray;
+}
+.navigation .logo {
+  padding: 2% 0;
+}
+.navigation .logo h1 {
+  font-size: 4rem;
+}
+.navigation nav a {
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+  padding: 0 2%;
 }
 footer {
   color: #22283B;
